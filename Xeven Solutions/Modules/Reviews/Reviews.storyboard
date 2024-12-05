@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Review View Controller-->
+        <scene sceneID="06h-Nn-1gb">
+            <objects>
+                <viewController storyboardIdentifier="ReviewViewController" id="yud-4K-7ci" customClass="ReviewViewController" customModule="Xeven_Solutions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVg-TS-Lcs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mdl-dj-hex">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ITg-Ba-AFW" customClass="FAPaginationLayout" customModule="FAPaginationLayout">
+                                    <size key="itemSize" width="358" height="530"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yud-4K-7ci" id="hIX-JF-zLY"/>
+                                    <outlet property="delegate" destination="yud-4K-7ci" id="dzo-9a-CSY"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o4y-yE-G8h" firstAttribute="bottom" secondItem="mdl-dj-hex" secondAttribute="bottom" id="Eys-c4-g5l"/>
+                            <constraint firstItem="mdl-dj-hex" firstAttribute="leading" secondItem="o4y-yE-G8h" secondAttribute="leading" id="FZr-Mj-6Sg"/>
+                            <constraint firstItem="o4y-yE-G8h" firstAttribute="trailing" secondItem="mdl-dj-hex" secondAttribute="trailing" id="dcX-Vf-ucG"/>
+                            <constraint firstItem="mdl-dj-hex" firstAttribute="top" secondItem="o4y-yE-G8h" secondAttribute="top" id="oOf-DD-t7n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o4y-yE-G8h"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="mdl-dj-hex" id="IIZ-Qw-bBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GV6-ty-mnp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="0.6696428571428571"/>
+        </scene>
+        <!--Review Detail View Controller-->
+        <scene sceneID="Xke-Vs-RBO">
+            <objects>
+                <viewController storyboardIdentifier="ReviewDetailViewController" id="njf-kt-4ZX" customClass="ReviewDetailViewController" customModule="Xeven_Solutions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S7T-AD-3ZS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrF-GD-MKZ">
+                                <rect key="frame" x="20" y="84" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QfP-Fb-3vC">
+                                <rect key="frame" x="20" y="118" width="374" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QfP-Fb-3vC" firstAttribute="top" secondItem="xrF-GD-MKZ" secondAttribute="bottom" constant="10" id="47J-1c-zCu"/>
+                            <constraint firstItem="xrF-GD-MKZ" firstAttribute="top" secondItem="PDv-Hz-7xV" secondAttribute="top" constant="40" id="Eo6-2t-bzq"/>
+                            <constraint firstItem="PDv-Hz-7xV" firstAttribute="trailing" secondItem="QfP-Fb-3vC" secondAttribute="trailing" constant="20" id="LXw-Es-rtd"/>
+                            <constraint firstItem="xrF-GD-MKZ" firstAttribute="leading" secondItem="PDv-Hz-7xV" secondAttribute="leading" constant="20" id="OdD-ku-AXc"/>
+                            <constraint firstItem="PDv-Hz-7xV" firstAttribute="trailing" secondItem="xrF-GD-MKZ" secondAttribute="trailing" constant="20" id="OpE-IZ-bgs"/>
+                            <constraint firstItem="PDv-Hz-7xV" firstAttribute="bottom" secondItem="QfP-Fb-3vC" secondAttribute="bottom" constant="20" id="kwB-1K-4MG"/>
+                            <constraint firstItem="QfP-Fb-3vC" firstAttribute="leading" secondItem="PDv-Hz-7xV" secondAttribute="leading" constant="20" id="paj-0v-7fe"/>
+                            <constraint firstItem="xrF-GD-MKZ" firstAttribute="centerX" secondItem="PDv-Hz-7xV" secondAttribute="centerX" id="sNS-Yv-2nL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PDv-Hz-7xV"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="QfP-Fb-3vC" id="sC8-Ev-ngr"/>
+                        <outlet property="titleLabel" destination="xrF-GD-MKZ" id="we1-5C-xPJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cp4-5N-e1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="1"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa_Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa_Regular.ttf">
+            <string>Comfortaa</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PortfolioCollectionViewCell" id="gTV-IL-0wX" customClass="PortfolioCollectionViewCell" customModule="Xeven_Solutions" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="513"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="513"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oG8-5c-epx">
+                        <rect key="frame" x="0.0" y="0.0" width="363" height="513"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="44" translatesAutoresizingMaskIntoConstraints="NO" id="3cz-2Y-pqh">
+                                <rect key="frame" x="0.0" y="0.0" width="363" height="359"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="IOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19j-gl-LxX">
+                                <rect key="frame" x="15" y="369" width="333" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkp-aW-DF5">
+                                <rect key="frame" x="15" y="393.5" width="333" height="99.5"/>
+                                <string key="text">App Store Preview
+This app is available only on the App Store for iPhone and iPad. My Live Doctors 12+
+Find A Doctor Online
+iMEDHealth, LLC
+ 5.0, 1 Rating
+Free
+iPhone Screenshots
+
+
+Description
+A product of iMEDHealth LLC, My Live Doctors is a mobile application that will help you find a doctor and book a free doctor chat at your convenience! No need to stress over your health issues anymore! Ask a doctor online and indulge in a live session, even on the go! </string>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="13"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofS-yG-Dmb">
+                                <rect key="frame" x="15" y="493" width="333" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ofS-yG-Dmb" secondAttribute="bottom" constant="20" id="3F4-OG-ptk"/>
+                            <constraint firstItem="19j-gl-LxX" firstAttribute="top" secondItem="3cz-2Y-pqh" secondAttribute="bottom" constant="10" id="6KU-c3-bdS"/>
+                            <constraint firstItem="3cz-2Y-pqh" firstAttribute="height" secondItem="oG8-5c-epx" secondAttribute="height" multiplier="0.7" id="81V-M6-hAj"/>
+                            <constraint firstItem="19j-gl-LxX" firstAttribute="leading" secondItem="oG8-5c-epx" secondAttribute="leading" constant="15" id="AxN-qY-9De"/>
+                            <constraint firstItem="kkp-aW-DF5" firstAttribute="top" secondItem="19j-gl-LxX" secondAttribute="bottom" constant="2" id="B9T-VW-4DP"/>
+                            <constraint firstItem="ofS-yG-Dmb" firstAttribute="trailing" secondItem="kkp-aW-DF5" secondAttribute="trailing" id="Hj9-Fc-wjv"/>
+                            <constraint firstItem="ofS-yG-Dmb" firstAttribute="leading" secondItem="kkp-aW-DF5" secondAttribute="leading" id="No8-oO-3tO"/>
+                            <constraint firstItem="3cz-2Y-pqh" firstAttribute="leading" secondItem="oG8-5c-epx" secondAttribute="leading" id="RLj-ts-Mfd"/>
+                            <constraint firstItem="ofS-yG-Dmb" firstAttribute="top" secondItem="kkp-aW-DF5" secondAttribute="bottom" id="Z4J-jK-Hav"/>
+                            <constraint firstItem="3cz-2Y-pqh" firstAttribute="top" secondItem="oG8-5c-epx" secondAttribute="top" id="Zhr-rl-QzZ"/>
+                            <constraint firstAttribute="trailing" secondItem="3cz-2Y-pqh" secondAttribute="trailing" id="emy-vB-d4S"/>
+                            <constraint firstAttribute="trailing" secondItem="19j-gl-LxX" secondAttribute="trailing" constant="15" id="pbp-J0-O59"/>
+                            <constraint firstItem="kkp-aW-DF5" firstAttribute="leading" secondItem="oG8-5c-epx" secondAttribute="leading" constant="15" id="tDp-Oe-dDw"/>
+                            <constraint firstAttribute="trailing" secondItem="kkp-aW-DF5" secondAttribute="trailing" constant="15" id="tHl-PE-apt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oG8-5c-epx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Sm-Mr-Gv0"/>
+                <constraint firstItem="oG8-5c-epx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dap-j6-BFC"/>
+                <constraint firstAttribute="bottom" secondItem="oG8-5c-epx" secondAttribute="bottom" id="ZPa-GR-8KV"/>
+                <constraint firstAttribute="trailing" secondItem="oG8-5c-epx" secondAttribute="trailing" id="qwi-Fp-gC7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="363" height="513"/>
+            <connections>
+                <outlet property="detailLabel" destination="kkp-aW-DF5" id="XJ6-RV-bSa"/>
+                <outlet property="imageView" destination="3cz-2Y-pqh" id="LcC-8B-isd"/>
+                <outlet property="titleLabel" destination="19j-gl-LxX" id="Xy5-Ad-vwY"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="201.89732142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="44" width="256" height="170.66667175292969"/>
+    </resources>
+</document>
